@@ -1,0 +1,20 @@
+---
+---
+[
+  {% for pg in site.pages %}
+  {% if pg.title != nil %}
+    {
+      "title"    : "{{ pg.title | escape }}",
+      "url"      : "{{ pg.url | relative_url }}"
+    } ,
+  {% endif %}
+  {% endfor %}
+
+  {% for doc in site.documents %}
+    {
+      "title"    : "{{ doc.title | escape }}",
+      "category" : "{{ doc.categories[0] | xml_escape }}",
+      "url"      : "{{ doc.url | relative_url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

@@ -1,0 +1,61 @@
+# Site Settings
+url: https://misonsky.github.io
+baseurl: ""
+title: Yongkang Liu
+subtitle: "Yongkang Liu's Homepage"
+description: "Yongkang Liu"
+keywords: Natural Language Processing，Large Language Model
+timezone: Asia/Beijing
+encoding: "utf-8"
+SEOTitle: Yongkang Liu's Homepage
+repository: https://misonsky.github.io
+
+# Author Settings
+author: Yongkang Liu
+github_username: misonsky
+location: Northeastern University
+email: "liuyongkang@qhd.neu.edu.cn"
+
+# Navigation Settings
+navs:
+  -
+    href: /
+    label: Home
+  - href: /publications/
+    label: Publications
+  - href: /teaching/
+    label: Teaching
+  - href: /grants/
+    label: Grants
+  - href: https://scholar.google.com.hk/citations?user=21nJTJYAAAAJ&hl=en
+    label: Google Scholar
+    target: _blank
+
+# RSS Settings
+RSS: true
+subscribe_rss: /feed.xml
+
+# Build Settings
+highlighter: rouge
+permalink: pretty
+plugins: []
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+        
+# Markdown Settings
+markdown: kramdown
+kramdown:
+    input: GFM
+mathjax: true
+
+# Comments Settings
+comments_provider: gitment
+gitment:
+    owner: yongkang
+    repo: blog-comments
+    oauth:
+        client_id: 5818ceff784afe05d31c
+        client_secret: dc7e8efc044c7194cf453740f82c646aa998f206

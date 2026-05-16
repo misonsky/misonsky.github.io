@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/vendor/primer-css/css/primer.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/primer-markdown/dist/user-content.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/octicons/octicons/octicons.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/components/collection.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/sections/profile.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/sections/contact.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/sections/news.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/globals/common.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/globals/responsive.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/posts/index.css' | relative_url }}">
+    <!-- Latest compiled and minified CSS -->
+    {% for css in page.css %}
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: css | relative_url }}">
+    {% endfor %}
+
+    {% if site.ios_app_name %}
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.subscribe_rss }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+      {% if page.keywords %}
+      {% assign keywords = page.keywords %}
+      {% else %}
+      {% assign keywords = site.keywords %}
+      {% endif %}
+    <meta name="keywords" content="{{ keywords | strip_html | strip_newlines}}">
+    <meta name="og:keywords" content="{{ keywords | strip_html | strip_newlines}}">
+      {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines}}">
+    <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines}}">
+      {% else if page.description %}
+    <meta name="description" content="{{ page.description | strip_html | strip_newlines}}">
+    <meta name="og:description" content="{{ page.description | strip_html | strip_newlines}}">
+      {% else if content %}
+    <meta name="description" content="{{ content | strip_html | strip_newlines | truncatewords: 100 }}">
+    <meta name="og:description" content="{{ content | strip_html | strip_newlines | truncatewords: 100 }}">
+      {% endif %}
+    {% else %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.og_image_url %}
+    <meta property="og:image" content="{{ page.og_image_url }}">
+    {% else %}
+        {% if page.photo_url %}
+    <meta property="og:image" content="{{ page.photo_url }}">
+        {% endif %}
+    {% endif %}
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US" />
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
+    {% endif %}
+    <script src="{{ '/assets/vendor/jquery/dist/jquery.min.js' | relative_url }}"></script>
+    <script type="text/javascript">
+    function toggleMenu() {
+        var nav = document.getElementsByClassName("site-header-nav")[0];
+        if (nav.style.display == "inline-flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "inline-flex";
+        }
+    }
+    </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114643083-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-114643083-1');
+    </script>
+</head>
+<body class="{{ page.class }}" data-mz="{{ page.class }}">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="{{ '/' | relative_url }}" title="{{ site.title }}">{{ site.title }}</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                {% for nav in site.navs %}
+                <a href="{% if nav.href | slice: 0, 4 == 'http' %}{{ nav.href }}{% else %}{{ nav.href | relative_url }}{% endif %}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
