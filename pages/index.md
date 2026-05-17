@@ -10,7 +10,7 @@ permalink: /
 [Northeastern University](https://scholar.google.com.hk/citations?user=21nJTJYAAAAJ&hl=en),  
 [Google Scholar](https://scholar.google.com.hk/citations?user=21nJTJYAAAAJ&hl=en),  
 [Official Faculty Profile](https://graduate.neuq.edu.cn/info/1045/5640.htm),  
-[Homepage](https://misoknisky.github.io/)<br>
+[Homepage](https://misonsky.github.io/)<br>
 
 Email: `liuyongkang [at] qhd.neu.edu.cn`  
 Verified email at `qhd.neu.edu.cn`
