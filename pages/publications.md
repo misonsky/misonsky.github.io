@@ -35,6 +35,8 @@ Z Wang, **Liu, Y.**, Y Luo, M Wang, Z Song, S Feng, X Yang, D Lin, D Wang, ...
    Liu, K., **Liu, Y**., Yang, X., Wang, P., Zhang, W., Feng, S., Zhang, Y., & Wang, D.
 - **Look Within or Look Beyond? A Theoretical Comparison Between Parameter-Efficient and Full Fine-Tuning**  （**CCF A ACL Main**)   
    **Liu, Y.**, Xu, X., Nie, E., Wang, Z., Feng, S., Wang, D., Li, Q., & Schutze, H.
+- **Why do more experts fail? a theoretical analysis of model merging** (CCF A ACL Main)
+   Wang, Z., Xu, X., **Liu, Y.**, Zhang, Y., Lin, P., Feng, S., Wang, D.,Yang, X.,& Schutze, H.  
 - **SAD: A Large-Scale Strategic Argumentative Dialogue Dataset** （**CCF A ACL Main**)  
    **Liu, Y.**, Yu, J., Wang, M., Zhang, Y., Nie, E., Feng, S., Wang, D., Song, K., & Schutze, H. 
 - **PlaM: Training-Free Plateau-Guided Model Merging for Better Visual Grounding in MLLMs** （**CCF A ACL Findings**)  
