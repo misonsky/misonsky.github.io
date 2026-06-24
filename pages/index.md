@@ -38,7 +38,7 @@ In addition to the research interests mentioned above, it also includes **<span 
 
 #### Recruitment
 
-**Master Student:** You are welcome to apply for my graduate program—whether you are taking the postgraduate entrance exam or seeking admission via recommendation.（每年4~5个名额，请提前联系-和刘立卿老师联合招生）
+**Master Student:** You are welcome to apply for my graduate program—whether you are taking the postgraduate entrance exam or seeking admission via recommendation.
 
 **Undergraduate Student:**  We recruit undergraduate students throughout the year — early joiners are welcome to get involved and start learning with the group right away.
 
