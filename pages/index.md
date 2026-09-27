@@ -40,20 +40,7 @@ In addition to the research interests mentioned above, it also includes **<span 
 
 **Master Student:** You are welcome to apply for my graduate program—whether you are taking the postgraduate entrance exam or seeking admission via recommendation.
 
-**Undergraduate Student:**  We recruit undergraduate students throughout the year — early joiners are welcome to get involved and start learning with the group right away.
+**Undergraduate Student:**  We recruit undergraduate students throughout the year — early joiners are welcome to get involved and start learning with the group right away. The laboratory provides high-performance GPU servers.
 
 
 
-#### Academic Service
-
-* **Area Chair:** ACL, EMNLP, EACL, NAACL
-* **PC / Reviewer:** AAAI, NeurIPS, ICML, CVPR, ECCV and related venues
-
-#### Research Funding
-
-* **2026.01-2028.12:** National Natural Science Foundation of China Youth Fund, PI  
-  High-quality data distillation and efficient computation for vertical-domain large models.
-* **2025.01-2027.12:** Fundamental Research Funds for the Central Universities, PI  
-  Task-driven efficient fine-tuning and inference acceleration.
-* **2025.01-2030.12:** Start-up funding, PI
-* Participating researcher in multiple NSFC General Program projects on emotion-aware and user-centered dialogue generation.
